@@ -1,0 +1,213 @@
+@font-face {
+	font-family: 'Betterlett';
+	src: url('/fonts/Betterlett.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Mogan';
+	src: url('/fonts/MoganRegular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+
+/* =======================================================
+* FOOTER START
+* ======================================================= */
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: #f8f3ee;
+}
+
+.footer__left-container {
+	padding: 60px 20px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	text-align: center;
+}
+
+.footer__left-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.footer__left-content h6 {
+	font-size: 11px;
+	color: var(--color-dark-pink);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.footer__left-info p {
+	margin-bottom: 12px;
+}
+
+.footer__right-container {
+	background-color: var(--color-pink);
+	padding: 60px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	color: #fff;
+}
+
+.footer__right-container input::placeholder,
+.footer__right-container textarea::placeholder {
+	color: #fff;
+}
+
+.footer__right-container input:focus,
+.footer__right-container textarea:focus {
+	border-bottom: 1px solid #fff;
+	transition-duration: 300ms;
+}
+
+.footer__left-copyright {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.footer__left-copyright h4 {
+	font-family: 'Mogan', Arial, sans-serif;
+	font-size: 24px;
+}
+
+.footer__left-copyright input {
+	border-bottom: 1px solid var(--color-dark-pink);
+	transition-duration: 300ms;
+}
+
+.footer__left-copyright input::placeholder {
+	color: var(--color-dark-pink);
+}
+
+.footer__left-copyright input:focus {
+	border-bottom: 1px solid var(--color-pink);
+}
+
+.socials {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.socials svg {
+	width: 20px;
+	height: 20px;
+	fill: #69727d;
+}
+
+@media screen and (min-width: 768px) {
+	.footer__left-container {
+		order: 1;
+		text-align: left;
+		padding: 60px 30px;
+		gap: 40px;
+	}
+
+	.footer__right-container {
+		padding: 60px 30px;
+	}
+
+	.footer__left-content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 40px;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.footer {
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.footer__right-container {
+		order: 2;
+	}
+}
+
+/* =======================================================
+* FOOTER END
+* ======================================================= */
+
+/* =======================================================
+* GO TO TOP START
+* ======================================================= */
+
+.gototop {
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	background-color: var(--color-pink);
+	border-radius: 50%;
+	box-shadow: 0 0 10px #d5b1bb;
+	cursor: pointer;
+	z-index: 100;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gototop:hover {
+	background-color: #fff;
+	color: var(--color-pink);
+}
+
+/* =======================================================
+* GO TO TOP END
+* ======================================================= */
+
+/* =======================================================
+* SHOP PAGE
+* ======================================================= */
+
+.shop-page .shop-item button {
+	opacity: 0;
+	bottom: -20px;
+}
+
+.shop-page .shop-item:hover button {
+	opacity: 1;
+	bottom: 20px;
+}
+
+/* =======================================================
+* HAIR STYLING PAGE
+* ======================================================= */
+
+.hair-styling-page input {
+	font-size: 14px;
+	border-bottom: 1px solid var(--color-dark-pink);
+	transition-duration: 300ms;
+}
+
+.hair-styling-page input::placeholder {
+	color: var(--color-dark-pink);
+}
+
+.hair-styling-page input:focus {
+	border-bottom: 1px solid var(--color-pink);
+}
