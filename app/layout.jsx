@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer/page';
 import { LazyShow, ScrollToTopButton } from '@/components/page';
 import '@/public/fonts/icon/icon.css';
-import '@/styles/_vendor.scss';
 import '@/styles/home.scss';
 import '@/styles/page.scss';
 import { Figtree } from 'next/font/google';
