@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ServiceSelect from '../ServiceSelect/page';
+import ServiceSelect from '../ServiceSelect/ServiceSelect';
 
-export default function Footer() {
+export const Footer = () => {
 	return (
 		<>
 			<div id="instagram" className="p-[15px]">
@@ -184,4 +184,4 @@ export default function Footer() {
 			</div>
 		</>
 	);
-}
+};

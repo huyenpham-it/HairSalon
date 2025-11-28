@@ -1,6 +1,6 @@
 'use client';
 
-import { HeaderButtonGreen } from '@/components/HeaderButtonGreen/page';
+import { HeaderButtonGreen } from '@/components/index';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';

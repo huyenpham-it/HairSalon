@@ -1,6 +1,6 @@
 'use client';
 
-import ServiceSelect from '@/components/ServiceSelect/page';
+import ServiceSelect from '@/components/ServiceSelect/ServiceSelect';
 import { Calendar } from '@/components/ui/calendar';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -13,7 +13,7 @@ import { createContext, useContext, useState } from 'react';
 const DialogContext = createContext();
 
 export function DialogProvider({ children }) {
-    const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(false);
 	const [date, setDate] = useState(null);
 	const [openPopover, setOpenPopover] = useState(false);
 

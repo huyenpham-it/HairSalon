@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export const SectionSeven = () => {
 	return (
 		<div className="w-full">
-			<iframe
+			{/* <iframe
 				className="w-full aspect-video"
 				src="https://www.youtube.com/embed/1c_gHonRtYI?si=IJgCEi4lqsEAJI6O"
 				title="YouTube video player"
@@ -16,7 +16,7 @@ export const SectionSeven = () => {
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				referrerPolicy="strict-origin-when-cross-origin"
 				allowFullScreen
-			></iframe>
+			></iframe> */}
 			<div className="w-full flex flex-col lg:flex-row p-[15px]">
 				<div className="w-full lg:w-1/2 bg-(--color-pink) px-[20px] md:px-[50px] py-[60px] md:py-[80px]">
 					<Swiper

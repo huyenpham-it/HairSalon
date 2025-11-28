@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 export const LazyShow = ({ children, delayIndex = 0, delayStep = 0.2, direction = 'vertical' }) => {
 	const ref = useRef(null);
 	const [isVisible, setIsVisible] = useState(false);
-
+console.log('LazyShow loaded');
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => {
@@ -32,7 +32,7 @@ export const LazyShow = ({ children, delayIndex = 0, delayStep = 0.2, direction 
 			style={{
 				transitionDelay: `${delayIndex * delayStep}s`
 			}}
-			className={`transition-all duration-500 ease-out' 
+			className={`transition-all duration-500 ease-out 
 				${isVisible ? 'opacity-100 translate-x-0 translate-y-0' : `opacity-0 ${hiddenTranslateClass}`}
 				`}
 		>

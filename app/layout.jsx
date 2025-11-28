@@ -1,5 +1,4 @@
-import Footer from '@/components/Footer/page';
-import { LazyShow, ScrollToTopButton } from '@/components/page';
+import { Footer, LazyShow, ScrollToTopButton } from '@/components/index';
 import '@/public/fonts/icon/icon.css';
 import '@/styles/home.scss';
 import '@/styles/page.scss';

@@ -1,6 +1,6 @@
 'use client';
 
-import { HeaderButtonPink } from '@/components/page';
+import { HeaderButtonPink } from '@/components/index';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Image from 'next/image';
 

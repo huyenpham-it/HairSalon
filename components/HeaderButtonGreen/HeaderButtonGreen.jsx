@@ -5,7 +5,7 @@ import { OUR_PAGES, SERVICE_SELECT } from '@/ultis/constants';
 import { ChevronDown, Search, ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu } from '../page';
+import { Menu } from '..';
 
 export const HeaderButtonGreen = () => {
 	const { openDialog } = useDialog();

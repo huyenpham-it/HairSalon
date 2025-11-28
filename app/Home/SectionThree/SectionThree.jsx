@@ -1,4 +1,4 @@
-import ServiceSelect from '@/components/ServiceSelect/page';
+import ServiceSelect from '@/components/ServiceSelect/ServiceSelect';
 import Image from 'next/image';
 
 export const SectionThree = () => {

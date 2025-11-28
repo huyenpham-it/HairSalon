@@ -5,17 +5,17 @@ import { OUR_PAGES, SERVICE_SELECT } from '@/ultis/constants';
 import { ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu } from '../page';
+import { Menu } from '..';
 
-export const Header = () => {
+export const HeaderButtonPink = () => {
 	const { openDialog } = useDialog();
 
 	return (
-		<div className="header absolute top-0 left-0 right-0 flex items-center justify-between p-[20px] md:py-[30px] md:px-[40px] text-white">
+		<div className="header absolute top-0 left-0 right-0 flex items-center justify-between p-[20px] md:py-[30px] md:px-[40px] text-black">
 			<div className="flex items-center gap-[40px] mr-auto">
 				<div className="w-[125px]">
 					<Link href="/">
-						<Image src="/images/logo-white.svg" width={1000} height={2000} alt="" />
+						<Image src="/images/logo-footer.svg" width={1000} height={2000} alt="" />
 					</Link>
 				</div>
 				<ul className="desktop-menu items-center gap-[20px] font-medium">
@@ -104,7 +104,7 @@ export const Header = () => {
 					<span>
 						<Link href="https://www.instLinkgram.com/cmsmasters/" target="_blank">
 							<svg
-								className="fill-white"
+								className="fill-black"
 								width="20"
 								height="20"
 								viewBox="0 0 448 512"
@@ -117,7 +117,7 @@ export const Header = () => {
 					<span>
 						<Link href="https://www.facebook.com/cmsmasters-133637440033420" target="_blank">
 							<svg
-								className="fill-white"
+								className="fill-black"
 								width="20"
 								height="20"
 								viewBox="0 0 320 512"
@@ -129,12 +129,11 @@ export const Header = () => {
 					</span>
 				</div>
 				<button
-					className="w-fit uppercase border border-white text-white hover:bg-white hover:text-black duration-300 px-[30px]"
+					className="w-fit uppercase border border-(--color-pink) bg-(--color-pink) text-white hover:border-black hover:bg-transparent hover:text-black duration-300 px-[30px]"
 					onClick={() => openDialog()}
 				>
 					Book a visit
 				</button>
-
 			</div>
 			<div className="hidden max-[1025px]:block ml-[20px]">
 				<Menu />
