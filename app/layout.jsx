@@ -10,7 +10,7 @@ import './globals.css';
 import { DialogProvider } from './providers/DialogProvider';
 
 const figtree = Figtree({
-	variable: '--font-geist-sans',
+	variable: '--font-figtree',
 	subsets: ['latin']
 });
 
