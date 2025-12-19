@@ -46,9 +46,11 @@ export const Menu = () => {
 										<div className="flex flex-col gap-6 text-[15px] font-medium">
 											<Link href="#">All Services</Link>
 											{SERVICE_SELECT.map((item) => (
-												<Link href={item.link} key={item.id}>
-													{item.service}
-												</Link>
+												<SheetClose asChild key={item.id}>
+													<Link href={item.link} key={item.id}>
+														{item.service}
+													</Link>
+												</SheetClose>
 											))}
 										</div>
 									</AccordionContent>
@@ -60,9 +62,11 @@ export const Menu = () => {
 									<AccordionContent className="pt-4 pb-0">
 										<div className="flex flex-col gap-6 text-[15px] font-medium">
 											{OUR_PAGES.map((item) => (
-												<Link href={item.link} key={item.id}>
-													{item.page}
-												</Link>
+												<SheetClose asChild key={item.id}>
+													<Link href={item.link} key={item.id}>
+														{item.page}
+													</Link>
+												</SheetClose>
 											))}
 										</div>
 									</AccordionContent>
